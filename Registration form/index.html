@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>task-1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato|Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body class="body-container">
+<section class="section-form" role="main">
+
+    <form class="form-demo" action="http://itcraft.com.ua/html­css­internship­2016­0439599340/form­controller.php" method="post">
+        <h1 class="title-form">Request a demo</h1>
+        <div class="wrapper">
+            <label for="user-first-name">First Name</label>
+            <input id="user-first-name" type="text" name="form_data[first_name]">
+        </div>
+
+        <div class="wrapper last-name">
+            <label for="user-last-name">Last Name</label>
+            <input id="user-last-name" type="text" name="form_data[last_name]">
+        </div>
+
+        <div class="wrapper user-email">
+            <label for="user-email">Email</label>
+            <input id="user-email" type="email" name="form_data[email]">
+        </div>
+
+        <!--*Tag fieldset doesn't work with flex-boxing in browsers firefox and chrome, this bug will be corrected soon-->
+        <section class="user-phone">
+            <h3 class="label-phone" role="heading">Phone Number</h3>
+            <div class="wrapper">
+                <label for="user-phone-country">phone country</label>
+                <input id="user-phone-country" type="tel" name="form_data[phone][country]">
+            </div>
+
+            <div class="wrapper">
+                <label for="user-phone-code">phone code</label>
+                <input id="user-phone-code" type="tel" name="form_data[phone][code]">
+            </div>
+
+            <div class="wrapper phone-number">
+                <label for="user-phone-number">phone number</label>
+                <input id="user-phone-number" type="tel" name="form_data[phone][number]">
+            </div>
+        </section>
+
+        <div class="wrapper user-organization">
+            <label for="organization">School/Organization *</label>
+            <div class="wrapper-user-organization">
+                <input id="organization" type="search" name="form_data[school_organization]">
+                <span class="icon-search"></span>
+            </div>
+        </div>
+
+        <div class="wrapper role-campus">
+            <label for="user-role-campus">Role on Campus *</label>
+            <input id="user-role-campus" type="text" name="form_data[school_organization]">
+        </div>
+
+        <div class="wrapper goals">
+            <label for="user-goals">What are your goals for DemoSystem? *</label>
+            <textarea id="user-goals"></textarea>
+        </div>
+
+        <div class="wrapper agree">
+            <label for="user-agree">
+                <input id="user-agree" type="checkbox">
+                I agree to the DemoSystem <em class="agree-select-text-first">Terms of Service</em> and <em class="agree-select-text-second">Privacy Policy</em>
+            </label>
+        </div>
+
+        <input class="button button-submit" type="submit" value="Submit">
+        <input class="button button-cancel" type="reset" value="Cancel">
+    </form>
+</section>
+
+</body>
+</html>

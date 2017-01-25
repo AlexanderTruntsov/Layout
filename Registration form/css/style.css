@@ -1,0 +1,162 @@
+.body-container {
+    box-sizing: border-box;
+    background: rgb(39, 41, 43);
+    color: rgba(255, 255, 255, .15);
+    font: 400 .813rem 'Lato', sans-serif;
+}
+
+.title-form {
+    font: 400 1.813rem 'Montserrat', sans-serif;
+    color:  rgba(255, 255, 255, .9);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    margin: .6em 0 0;
+    padding: 0 0 .24em 0;
+    text-transform: uppercase;
+}
+
+.section-form {
+    margin: 0 1.7em 2em;
+    min-width: 320px;
+}
+
+.form-demo {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.wrapper  {
+    margin: 1.9em 0 0;
+    width: 100%;
+}
+
+.wrapper label {
+    margin: 0 0 .3em 0;
+    display: inline-block;
+}
+
+.wrapper input {
+    display: inline-block;
+    width: 96%;
+    padding: 13px 10px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, .15);
+    border: 1px solid rgba(255, 255, 255, .15);
+    outline: none;
+    background: none;
+}
+
+.label-phone {
+    position: absolute;
+    top: 4px;
+}
+
+.last-name { margin: 1.4em 0 0; }
+
+.user-email,
+.user-organization,
+.role-campus,
+.goals,
+.agree {
+    margin: 1.5em 0 0;
+}
+
+.user-phone {
+    margin-top: 1.2em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-phone .wrapper {
+    width: 25%;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.user-phone .wrapper input { width: 89%; }
+
+.user-phone .phone-number { width: 40%; }
+
+.user-phone label {
+   visibility: hidden;
+    font-size: 0;
+}
+
+.wrapper-user-organization {
+    width: 101%;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 3px;
+    position: relative;
+}
+.wrapper-user-organization input { border: none; }
+
+.icon-search {
+    position: absolute;
+    top: 35%;
+    margin-left: -5px;
+}
+
+#user-goals {
+    border-radius: 3px;
+    background: none;
+    width: 100%;
+    height: 150px;
+    color: rgba(255, 255, 255, .15);
+    border: 1px solid rgba(255, 255, 255, .15);
+    outline: none;
+}
+
+.agree input,
+.agree label {
+    display: inline-block;
+    width: auto;
+    line-height: 1.7;
+}
+
+.agree-select-text-first,
+.agree-select-text-second {
+    color: rgba(255, 255, 255, .9);
+}
+
+.agree-select-text-second { margin-left: 1.7em; }
+
+.button {
+    margin-top: 1.2em;
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    padding: 11px;
+    width: 100%;
+    cursor: pointer;
+    background: none;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, .15);
+}
+
+.button-submit { background-color:  rgba(106, 189, 151, .8); }
+
+/*Style for active input*/
+
+.wrapper .label-active { color: rgba(255, 255, 255, .9); }
+
+.wrapper .input-active {
+    color: rgba(255, 255, 255, .9);
+    border: 1px solid rgba(255, 255, 255, .9);
+}
+
+/*Style for valid input*/
+
+.wrapper .label-valid { color: #6abd97; }
+
+.wrapper .input-valid {
+    color: #6abd97;
+    border: 1px solid #6abd97;
+}
+.wrapper .input-valid-text { color: #6abd97; }
+
+/*Style for invalid input*/
+
+.label-invalid { color: #a54f4c }
+
+.wrapper .input-invalid     {
+    border: 1px solid #a54f4c;
+}
