@@ -1,0 +1,50 @@
+/*
+ *
+ * Cards section
+ *
+ */
+
+.table__list-cards
+  margin: 6px
+
+.cards-list__item
+  position: relative
+  display: inline-block
+  width: 28px
+  height: 38px
+  overflow: hidden
+  text-align: left
+  padding: 2px 0 0 0
+  font: 700 .8em $main-font
+
+  &_club
+    color: $cart-club
+    background: url("../img/club.png") 11px 7px no-repeat
+
+  &_heart
+    color: $cart-heart
+    background: url("../img/heart.png") 14px 5px no-repeat
+
+.cards-list__item
+  background:
+    color: $card-background
+    size: 75%
+
+.cards-list__card-value
+  display: inline-block
+  margin-left: 2.2px
+
+.cards-list__suit-img
+  display: block
+  width: 12px
+  margin-top: -3px
+
+.cards-list__item_suit:before
+  content: ''
+  position: absolute
+  display: block
+  width: 21px
+  background: url("../img/heart.png")
+  height: 10px
+  top: 32px
+  right: -7px
