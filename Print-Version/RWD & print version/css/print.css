@@ -1,0 +1,122 @@
+@page {
+    margin: 1.5cm;
+}
+
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    background-color: #fff !important;
+    color: black !important;
+}
+
+form,
+iframe,
+.video-container,
+.main-footer,
+.feature-item i,
+.users-list {
+    display: none;
+}
+
+.logo,
+.download-item,
+.social-item {
+    display: block;
+}
+
+.header-content,
+.wrapper,
+.feature-item,
+.download-item a,
+.notify-content,
+.social-item a {
+    width: 100%;
+}
+
+.notify-content {
+    max-width: 100%;
+}
+
+p, a {
+    font: 12pt/1.3 Georgia, "Times New Roman", Times, serif !important;
+}
+
+blockquote p {
+    font: italic 12pt/1.3 Georgia, "Times New Roman", Times, serif !important;
+}
+
+h1 a {
+    font: bold 16pt/1.3 Georgia, "Times New Roman", Times, serif !important;
+}
+
+h2,
+blockquote .author {
+    font: bold 14pt/1.3 Georgia, "Times New Roman", Times, serif !important;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a[href^=http]:after {
+    content:" (" attr(href) ")";
+    font-weight: bold;
+}
+
+.main-header {
+    background: none;
+    border-top: none;
+    margin-bottom: 1cm !important;
+}
+
+.logo {
+    margin-bottom: 0.1cm !important;
+}
+
+.main-header:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: url(http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=https%3A//notify.com/&chld=H|0);
+}
+
+.feature-item {
+    width: 29%;
+    margin-right: 6.5% !important;
+}
+
+.feature-item:last-child {
+    margin-right: 0 !important;
+}
+
+.download-item a,
+.feature-item p,
+.notify-content p,
+.socials,
+.social-item a {
+    text-align: left;
+}
+
+.testimonial {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 0.5cm !important;
+}
+
+.features,
+.notify,
+.main-content:after,
+.testimonial
+ {
+    margin-bottom: 0.5cm !important;
+}
+
+.main-content:after {
+    content: "\00A9 2015 Notify.com - All rights reserved.";
+    display: block;
+    margin-top: 0.5cm !important;
+    text-align: center;
+    font: 12pt/1.3 Georgia, "Times New Roman", Times, serif !important;
+}

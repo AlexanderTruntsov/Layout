@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile first</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="main-header wrapper">
+    <h1 class="logo">
+        <a class="icon icon-logo" href="#">Prechu</a>
+    </h1>
+    <div id="toggle-button" class="toggle-button"><span></span></div>
+    <nav id="main-menu" class="main-menu hidden">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#">Home</a>
+            </li><li class="menu-item">
+                <a href="#">Products</a>
+            </li><li class="menu-item">
+                <a href="#">Services</a>
+            </li><li class="menu-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main-content">
+    <div class="slider">
+        <div class="wrapper">
+            <span class="icon icon-leftarrow"></span>
+            <span class="icon icon-rightarrow"></span>
+            <ul class="slide-list">
+                <li class="slide-item">
+                    <div class="img-box">
+                        <img src="img/iphone.png" alt="iphone"/>
+                    </div><section class="slide-content">
+                        <h2>Lorem Ipsum is simply</h2>
+                        <p class="pre-line">dummy text of the
+                            printing & typesetting</p>
+                        <a href="#" class="button sign-up"><i class="icon icon-check"></i>Sign up now</a>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="popular-list wrapper">
+        <li class="popular-item clearfix">
+            <i class="icon-pencil"></i>
+            <h2>Contrary to popular</h2>
+            <p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+        </li><li class="popular-item clearfix">
+            <i class="icon-monitor"></i>
+            <h2>Contrary to popular</h2>
+            <p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+        </li><li class="popular-item clearfix">
+            <i class="icon-basket"></i>
+            <h2>Contrary to popular</h2>
+            <p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+        </li>
+    </ul>
+    <article class="shopping-article wrapper">
+        <h2>The Shopping cart</h2>
+        <div class="img-box">
+            <img src="img/cart.jpg" alt="cart"/>
+        </div><section class="article-content">
+            <h3>Some Bullet text here</h3>
+            <p class="pre-line">Lorem Ipsum is simply dummy text of the printing and typesetting
+               Lorem Ipsum has been the industry's standard dummy text ever
+               When an unknown printer took a galley of type and scrambled
+               It to make a type specimen book. It has survived not only five centuries
+               But also the leap into electronic typesetting,
+               Remaining essentially unchanged. It was popularised
+               The release of Letraset sheets containing Lorem Ipsum passages</p>
+        </section>
+    </article>
+</main>
+<footer class="main-footer">
+    <p class="copyrights wrapper">Copyright © 2012-2013 cssauthor.com</p>
+</footer>
+
+<script>
+    var toggleButton = document.getElementById("toggle-button"),
+        mainMenu = document.getElementById("main-menu");
+
+    var clickEvent = ('ontouchstart' in window ? 'touchend' : 'click');
+
+    toggleButton.addEventListener(clickEvent, function(event) {
+        mainMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
